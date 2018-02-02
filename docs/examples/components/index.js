@@ -14,12 +14,15 @@ import Control from './control';
 import DrivingRoute from './driving-route';
 import PolygonPoint from './polygonPoint'
 import MarkLable from './mark-label';
+import LuShu from './luShu';
 import React from 'react';
 import {render} from 'react-dom';
 
 const examples = (
   <div>
     <h1>React-BMap 示例</h1>
+      <h2>路 书</h2>
+      <LuShu/>
       <h2>MarkLable</h2>
 <MarkLable />
       <h2>Map 围栏 </h2>

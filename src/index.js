@@ -64,4 +64,12 @@ export {default as Arc} from './components/arc';
  */
 export {default as PolygonPoints} from './components/polygonPoints';
 
+/**
+ * MarkLabel组件
+ */
 export {default as MarkLabel} from './components/mark-label';
+
+/**
+ * LuShu组件
+ */
+export {default as LuShu} from './components/luShu';
