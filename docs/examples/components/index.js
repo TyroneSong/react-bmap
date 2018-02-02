@@ -12,12 +12,15 @@ import Arc from './arc';
 import Boundary from './boundary';
 import Control from './control';
 import DrivingRoute from './driving-route';
+import PolygonPoint from './polygonPoint'
 import React from 'react';
 import {render} from 'react-dom';
 
 const examples = (
   <div>
     <h1>React-BMap 示例</h1>
+      <h2>Map 11简单地图 </h2>
+      <PolygonPoint/>
     <h2>Map 简单地图 <a href="https://github.com/huiyan-fe/react-bmap/blob/master/docs/examples/components/map.js">示例代码</a></h2>
     <Map />
     <h2>Marker 标注 <a href="https://github.com/huiyan-fe/react-bmap/blob/master/docs/examples/components/marker.js">示例代码</a></h2>

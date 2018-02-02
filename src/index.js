@@ -58,3 +58,8 @@ export {default as PointLabel} from './components/point-label';
  * Arc组件
  */
 export {default as Arc} from './components/arc';
+
+/**
+ * PolygonPoint组件
+ */
+export {default as PolygonPoints} from './components/polygonPoints';
