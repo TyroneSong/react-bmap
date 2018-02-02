@@ -20,7 +20,7 @@ import {render} from 'react-dom';
 const examples = (
   <div>
     <h1>React-BMap 示例</h1>
-      <h2>labelll</h2>
+      <h2>MarkLable</h2>
 <MarkLable />
       <h2>Map 围栏 </h2>
       <PolygonPoint/>
