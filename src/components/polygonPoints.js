@@ -19,7 +19,7 @@ export default class Map extends Component {
     static get defaultProps() {
         return {
             style: {
-                height: '350px'
+                // height: '350px'
             },
             /*
             center: {
