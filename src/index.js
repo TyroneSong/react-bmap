@@ -63,3 +63,5 @@ export {default as Arc} from './components/arc';
  * PolygonPoint组件
  */
 export {default as PolygonPoints} from './components/polygonPoints';
+
+export {default as MarkLabel} from './components/mark-label';
