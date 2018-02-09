@@ -7,6 +7,7 @@ function TipLable(options) {
     this.point = point;
     var name = options.name;
     var offset = options.offset;
+    var style = options.style;
 
     this.map = map;
     // var tip = this.tip = new Tip(options);
@@ -14,6 +15,7 @@ function TipLable(options) {
     var marker = this.marker = new BMap.Marker(this.point);
 
     var label = new BMap.Label(name,offset);
+    label.setStyle(style);
 
     marker.setLabel(label);
 
@@ -26,7 +28,7 @@ function TipLable(options) {
     marker.addEventListener('dragend', function () {
         options.changePosition && options.changePosition(self.point);
     });
-    marker.enableDragging();
+    // marker.enableDragging();
 }
 
 TipLable.prototype.show = function () {

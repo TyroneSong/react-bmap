@@ -70,7 +70,8 @@ export default class App extends Component {
                     offset: item.offset,
                     index: item.index !== undefined ? item.index : index + 1, 
                     color: item.color,
-                    change: function() {}
+                    style: item.style,
+                    // change: function() {}
                 });
                 points.push(item.point);
                 tip.show();

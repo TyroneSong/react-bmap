@@ -170,6 +170,21 @@ export default class LuShu extends Component {
             landmarkPois: [],
         });
 
+
+        var paths = bdPoints.length;
+        var carMk = new BMap.Marker(bdPoints[0]);
+        map.addOverlay(carMk);
+        var i = 0;
+        function resetMkPoint(i){
+            carMk.setPosition(bdPoints[i]);
+            if(i < paths){
+                setTimeout(function(){
+                    i++;
+                    resetMkPoint(i);
+                },100);
+            }
+        }
+
         $("run").onclick = function(){
             console.log('start')
             lushu.start();
@@ -183,7 +198,9 @@ export default class LuShu extends Component {
             lushu.pause();
         }
         $("hide").onclick = function(){
-            lushu.hideInfoWindow();
+            setTimeout(function(){
+                resetMkPoint(5);
+            },100)
         }
         $("show").onclick = function(e){
             console.log(e);
@@ -195,6 +212,12 @@ export default class LuShu extends Component {
     }
 
     renderChildren() {
+        const { isCurrent, state, speed } = this.props;
+        if (isCurrent) {
+            console.log(state);
+        } else {
+            console.log(speed);
+        }
 
         const {children} = this.props;
 
