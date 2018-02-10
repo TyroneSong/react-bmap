@@ -22,6 +22,7 @@ export default class App extends Component {
                     }
                 },
                 {
+
                     style: { backgroundColor: '#0f0', color: '#fff', fontWeight: 'bold' },
                     offset: {offset:new BMap.Size(20,-10)},
                     name: '东大桥00000',

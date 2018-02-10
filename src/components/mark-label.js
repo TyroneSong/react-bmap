@@ -71,6 +71,7 @@ export default class App extends Component {
                     index: item.index !== undefined ? item.index : index + 1, 
                     color: item.color,
                     style: item.style,
+                    icon: item.icon,
                     // change: function() {}
                 });
                 points.push(item.point);
